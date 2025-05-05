@@ -1468,15 +1468,15 @@ input[type="submit"] {
 }
 
 .homepage-bg-1 {
-  background-image: url(../img/hero-bg.jpg);
+  background-image: url(../img/slide-filter-air.webp);
 }
 
 .homepage-bg-2 {
-  background-image: url(../img/hero-bg-2.jpg);
+  background-image: url(../img/slide-filter-air-1.webp);
 }
 
 .homepage-bg-3 {
-  background-image: url(../img/hero-bg-3.jpg);
+  background-image: url(../img/slide-filter-air-2.webp);
 }
 
 .homepage-slider {
@@ -2059,14 +2059,14 @@ a.video-play-btn {
   z-index: 2;
   top: 50%;
   margin-top: -45px;
-  -webkit-box-shadow: 0 0 20px #adadad;
-  box-shadow: 0 0 20px #adadad;
+  -webkit-box-shadow: 0 0 0px #adadad;
+  box-shadow: 0 0 0px #adadad;
   left: 50%;
   margin-left: -45px;
 }
 
 .abt-bg {
-  background-image: url(../img/abt.jpg);
+  background-image: url(../img/Filter-Air-Yamaha_-Filter-Air_-Penjernih-Air_-Penyaring-Air_-Filter-Air-Sumur_-Filter-Air-Berkualita.webp);
   height: 100%;
   width: 100%;
   background-size: cover;
@@ -2117,7 +2117,7 @@ a.video-play-btn {
 .shop-banner {
   position: relative;
   background-color: #f5f5f5;
-  background-image: url(../img/1.jpg);
+  background-image: url(../img/1.webp);
   background-size: cover;
   padding: 110px 0px 115px;
 }
@@ -2158,7 +2158,7 @@ a.video-play-btn {
 }
 
 .feature-bg:after {
-  background-image: url(../img/feature-bg.jpg);
+  background-image: url(../img/Filter-Air-Yamaha_-Filter-Air_-Penjernih-Air_-Penyaring-Air_-Filter-Air-Sumur_-Filter-Air-Berkualita.webp);
   position: absolute;
   right: 0;
   top: 0;
