@@ -869,27 +869,38 @@
 	</div>
 	<!-- end copyright -->
 	
-	<!-- jquery -->
-	<script src="/filter-air/assets/js/jquery-1.11.3.min.js"></script>
-	<!-- bootstrap -->
-	<script src="/filter-air/assets/bootstrap/js/bootstrap.min.js"></script>
-	<!-- count down -->
-	<script src="/filter-air/assets/js/jquery.countdown.js"></script>
-	<!-- isotope -->
-	<script src="/filter-air/assets/js/jquery.isotope-3.0.6.min.js"></script>
-	<!-- waypoints -->
-	<script src="/filter-air/assets/js/waypoints.js"></script>
-	<!-- owl carousel -->
-	<script src="/filter-air/assets/js/owl.carousel.min.js"></script>
-	<!-- magnific popup -->
-	<script src="/filter-air/assets/js/jquery.magnific-popup.min.js"></script>
-	<!-- mean menu -->
-	<script src="/filter-air/assets/js/jquery.meanmenu.min.js"></script>
-	<!-- sticker js -->
-	<script src="/filter-air/assets/js/sticker.js"></script>
-	<!-- main js -->
-	<script src="/filter-air/assets/js/main.js"></script>
+<!-- jQuery terbaru -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
+<!-- bootstrap -->
+<script src="/filter-air/assets/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- count down -->
+<script src="/filter-air/assets/js/jquery.countdown.js"></script>
+
+<!-- isotope -->
+<script src="/filter-air/assets/js/jquery.isotope-3.0.6.min.js"></script>
+
+<!-- waypoints -->
+<script src="/filter-air/assets/js/waypoints.js"></script>
+
+<!-- owl carousel -->
+<script src="/filter-air/assets/js/owl.carousel.min.js"></script>
+
+<!-- magnific popup -->
+<script src="/filter-air/assets/js/jquery.magnific-popup.min.js"></script>
+<link rel="stylesheet" href="/filter-air/assets/css/magnific-popup.css">
+
+<!-- mean menu -->
+<script src="/filter-air/assets/js/jquery.meanmenu.min.js"></script>
+
+<!-- sticker js -->
+<script src="/filter-air/assets/js/sticker.js"></script>
+
+<!-- main js -->
+<script src="/filter-air/assets/js/main.js"></script>
+
+<!-- Inisialisasi Accordion jika ada -->
 <script>
   document.querySelectorAll('.accordion-header').forEach(header => {
     header.addEventListener('click', () => {
@@ -898,6 +909,20 @@
     });
   });
 </script>
+
+<!-- Inisialisasi Magnific Popup untuk video YouTube -->
+<script>
+  $(document).ready(function() {
+    $('.popup-youtube').magnificPopup({
+      type: 'iframe',
+      mainClass: 'mfp-fade',
+      removalDelay: 160,
+      preloader: false,
+      fixedContentPos: false
+    });
+  });
+</script>
+
 
 
 </body>
