@@ -165,4 +165,23 @@
     });
 
 
-}(jQuery));
+    (function($){
+
+        // kode-kode JS lain dulu, misalnya:
+        $('.search-bar-icon').on('click', function() {
+          $('.search-area').addClass('active');
+        });
+      
+        // Tambahkan Owl Carousel di sini (masih di dalam fungsi)
+        $(document).ready(function(){
+          $(".owl-carousel").owlCarousel({
+            items: 1,
+            loop: true,
+            margin: 10,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplayHoverPause: true
+          });
+        });
+      
+      })(jQuery);      
