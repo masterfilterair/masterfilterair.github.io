@@ -124,35 +124,51 @@
 <!-- end breadcrumb section -->
 
 <!-- Section Video YouTube -->
-<div class="col-lg-8 offset-lg-2 text-center">
-	<div class="section-title">	
+<section class="video-section pt-80 pb-80">
+	<div class="col-lg-8 offset-lg-2 text-center">
+	  <div class="section-title">
 		<h2><span class="orange-text">VIDEO PEMASANGAN </span>FILTER AIR MASTER</h2>
 		<p>Proyek Terpasang: Filter Air Rumah & Industri.</p>
+	  </div>
 	</div>
-</div>
-	  <div class="video-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
-		<div class="video-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px; background: #000;">
-		  <iframe src="https://www.youtube.com/embed/9tW7nv5Gdis?si=pudH0VNBgvKScFgT" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen loading="lazy"></iframe>
-		</div>
-		<div class="video-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px; background: #000;">
-		  <iframe src="https://www.youtube.com/embed/ZdytjtqwRL8?si=Tlf8rZ81ZArDEDbd" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen loading="lazy"></iframe>
-		</div>
-		<div class="video-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px; background: #000;">
-		  <iframe src="https://www.youtube.com/embed/5knjZT5umy8?si=UcHqrpj1eUIirEPg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen loading="lazy"></iframe>
-		</div>
-		<div class="video-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px; background: #000;">
-		  <iframe src="https://www.youtube.com/embed/PbCpJbEK1Dc?si=ztHa9G5nMxr95xea" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen loading="lazy"></iframe>
-		</div>
-		<div class="video-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px; background: #000;">
-		  <iframe src="https://www.youtube.com/embed/1GI392H_KpQ?si=7CJKr1XyCinzQx-k" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen loading="lazy"></iframe>
-		</div>
-		<div class="video-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px; background: #000;">
-		  <iframe src="https://www.youtube.com/embed/6vc1VfI10kw?si=sMVOBoNqBe_7lZ7t" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen loading="lazy"></iframe>
-		</div>
+  
+	<div class="video-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+	  <!-- Video Thumbnail Items -->
+	  <div class="video-thumbnail" style="cursor: pointer;" onclick="loadVideo(this, '9tW7nv5Gdis')">
+		<img src="https://img.youtube.com/vi/9tW7nv5Gdis/hqdefault.jpg" alt="Video Pemasangan Filter Air Rumah Tangga Jakarta Barat" style="width:100%; border-radius: 8px;">
+	  </div>
+	  <div class="video-thumbnail" style="cursor: pointer;" onclick="loadVideo(this, 'ZdytjtqwRL8')">
+		<img src="https://img.youtube.com/vi/ZdytjtqwRL8/hqdefault.jpg" alt="Video Pemasangan Filter Air Rumah Sakit" style="width:100%; border-radius: 8px;">
+	  </div>
+	  <div class="video-thumbnail" style="cursor: pointer;" onclick="loadVideo(this, '5knjZT5umy8')">
+		<img src="https://img.youtube.com/vi/5knjZT5umy8/hqdefault.jpg" alt="Video Pemasangan Filter Air Central Kitchen" style="width:100%; border-radius: 8px;">
+	  </div>
+	  <div class="video-thumbnail" style="cursor: pointer;" onclick="loadVideo(this, 'PbCpJbEK1Dc')">
+		<img src="https://img.youtube.com/vi/PbCpJbEK1Dc/hqdefault.jpg" alt="Video Pemasangan Filter Air Hotel" style="width:100%; border-radius: 8px;">
+	  </div>
+	  <div class="video-thumbnail" style="cursor: pointer;" onclick="loadVideo(this, '1GI392H_KpQ')">
+		<img src="https://img.youtube.com/vi/1GI392H_KpQ/hqdefault.jpg" alt="Video Pemasangan Filter Air Industri Pabrik" style="width:100%; border-radius: 8px;">
+	  </div>
+	  <div class="video-thumbnail" style="cursor: pointer;" onclick="loadVideo(this, '6vc1VfI10kw')">
+		<img src="https://img.youtube.com/vi/6vc1VfI10kw/hqdefault.jpg" alt="Video Pemasangan Filter Air Industri" style="width:100%; border-radius: 8px;">
 	  </div>
 	</div>
   </section>
-<!-- endSection Video YouTube -->
+  
+  <!-- Lazy Load YouTube Script -->
+  <script>
+	function loadVideo(el, videoId) {
+	  el.outerHTML = `
+		<div class="video-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px;">
+		  <iframe src="https://www.youtube.com/embed/${videoId}?autoplay=1" 
+			frameborder="0" allowfullscreen loading="lazy"
+			style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+		  </iframe>
+		</div>
+	  `;
+	}
+  </script>
+  
 
 <!-- footer -->
 <div class="footer-area">
