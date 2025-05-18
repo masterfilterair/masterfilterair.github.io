@@ -2799,3 +2799,7 @@ table.order-details tbody td {
   }
 }
 
+.homepage-slider .hero-text .subtitle,
+.homepage-slider .hero-text h2 {
+  color: #ffffff; /* atau pakai white */
+}
