@@ -2798,3 +2798,19 @@ table.order-details tbody td {
     margin-top: 20px;
   }
 }
+
+.produk-kategori h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 30px;
+  position: relative;
+}
+.produk-kategori h2::after {
+  content: '';
+  width: 60px;
+  height: 3px;
+  background: #00bcd4;
+  display: block;
+  margin: 10px auto 0;
+}
