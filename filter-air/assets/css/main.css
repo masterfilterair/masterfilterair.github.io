@@ -2803,3 +2803,53 @@ table.order-details tbody td {
 .homepage-slider .hero-text h2 {
   color: #ffffff; /* atau pakai white */
 }
+
+/* === Promo Banner Custom Styling === */
+.promo-banner-full {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white !important;
+  padding: 80px 20px;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden;
+  box-sizing: border-box;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+  background-color: #000;
+}
+
+.promo-content-full {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.promo-content-full h2,
+.promo-content-full p {
+  color: #ffffff !important;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+}
+
+.btn-promo {
+  background-color: #ffd700;
+  color: #222;
+  padding: 16px 36px;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 1.3rem;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  box-shadow: 0 5px 15px rgba(255, 215, 0, 0.7);
+}
+
+.btn-promo:hover {
+  background-color: #ffc107;
+  color: #000;
+}
