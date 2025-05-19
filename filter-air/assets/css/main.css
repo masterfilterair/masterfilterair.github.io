@@ -2804,14 +2804,13 @@ table.order-details tbody td {
   color: #ffffff; /* atau pakai white */
 }
 
-/* === Promo Banner Custom Styling === */
 .promo-banner-full {
   width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
+  left: 50%;
+  right: 50%;
+  position: relative;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -2819,10 +2818,7 @@ table.order-details tbody td {
   padding: 80px 20px;
   text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  overflow: hidden;
-  box-sizing: border-box;
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
-  background-color: #000;
 }
 
 .promo-content-full {
@@ -2844,8 +2840,8 @@ table.order-details tbody td {
   text-decoration: none;
   border-radius: 30px;
   font-size: 1.3rem;
-  transition: background-color 0.3s ease;
   display: inline-block;
+  transition: background-color 0.3s ease;
   box-shadow: 0 5px 15px rgba(255, 215, 0, 0.7);
 }
 
