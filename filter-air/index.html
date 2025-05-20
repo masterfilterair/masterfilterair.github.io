@@ -34,23 +34,150 @@
   <meta name="twitter:site" content="@masterfilterair">
   <meta name="twitter:creator" content="@masterfilterair">
 
-  <!-- Structured Data (Schema.org) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Master Filter Air",
-    "url": "https://masterfilterair.github.io/filter-air/",
-    "logo": "https://masterfilterair.github.io/filter-air/assets/img/logo.png",
-    "sameAs": [
-      "https://www.facebook.com/masterfilterair",
-      "https://twitter.com/masterfilterair",
-      "https://www.instagram.com/master_filterair/",
-      "https://www.linkedin.com/in/pt-master-sinergi-bersaudara-2a6213222",
-      "https://www.youtube.com/channel/UCMiTW_3CiKcXcrd36ZXZvrQ"
-    ]
-  }
-  </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://masterfilterair.github.io/filter-air/#organization",
+      "name": "Master Filter Air",
+      "url": "https://masterfilterair.github.io/filter-air/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://masterfilterair.github.io/filter-air/assets/img/logo_master_water_solution.webp",
+        "width": 600,
+        "height": 60
+      },
+      "sameAs": [
+        "https://www.facebook.com/masterfilterair",
+        "https://twitter.com/masterfilterair",
+        "https://www.instagram.com/master_filterair/",
+        "https://www.linkedin.com/in/pt-master-sinergi-bersaudara-2a6213222",
+        "https://www.youtube.com/channel/UCMiTW_3CiKcXcrd36ZXZvrQ"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://masterfilterair.github.io/filter-air/#website",
+      "url": "https://masterfilterair.github.io/filter-air/",
+      "name": "Master Filter Air",
+      "publisher": {
+        "@id": "https://masterfilterair.github.io/filter-air/#organization"
+      },
+      "inLanguage": "id",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://masterfilterair.github.io/filter-air/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://masterfilterair.github.io/filter-air/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Beranda",
+          "item": "https://masterfilterair.github.io/filter-air/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Apa itu filter air rumah tangga?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Filter air rumah tangga adalah alat penyaring yang digunakan untuk membersihkan air dari kotoran, klorin, logam berat, dan bakteri sebelum digunakan untuk keperluan sehari-hari."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Mengapa penting menggunakan filter air di rumah?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Karena air bersih sangat penting bagi kesehatan keluarga. Filter membantu memastikan air bebas dari kontaminan berbahaya."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Jenis filter air apa yang paling cocok untuk rumah saya?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Jenis filter tergantung pada sumber air Anda (PDAM, sumur, air tanah). Konsultasikan dengan penyedia filter air terpercaya."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Berapa lama umur pakai filter air?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Umumnya 6 hingga 12 bulan, tergantung pemakaian dan kualitas air yang disaring."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Bagaimana cara mengetahui kapan filter harus diganti?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Biasanya terlihat dari penurunan tekanan air atau perubahan rasa dan warna air. Beberapa produk memiliki indikator penggantian."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Apakah filter air bisa menghilangkan bakteri?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ya, filter air tertentu seperti yang menggunakan teknologi UV atau membran ultrafiltrasi bisa menghilangkan bakteri dan mikroorganisme."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Apakah perlu perawatan khusus untuk filter air?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Filter umumnya membutuhkan pembersihan berkala dan penggantian cartridge sesuai petunjuk produsen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Berapa biaya pasang filter air di rumah?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Biaya tergantung jenis filter dan kompleksitas pemasangan. Konsultasi dulu dengan penyedia jasa terpercaya."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Apakah filter air bisa digunakan untuk air sumur?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Bisa, tapi disarankan memakai filter khusus untuk air tanah yang mampu menyaring zat besi, mangan, dan bau tidak sedap."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Apakah filter air Master cocok untuk air PDAM?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ya, filter dari Master Filter Air sangat efektif untuk menyaring klorin, kotoran, dan partikel halus dari air PDAM."
+      }
+    }
+  ]
+}
+</script>
+
+
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
