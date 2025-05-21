@@ -776,7 +776,52 @@ Filter Air Rumah Tangga Berkualitas | Master Filter Air | M300 SC, M300 Manual, 
 
     </div>
   </div>
-</section>	  
+</section>
+  .accordion {
+    max-width: 800px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+  }
+
+  .accordion-item {
+    background-color: white;
+    border: 2px solid #ffe08a;
+    margin: 10px 0;
+    border-radius: 6px;
+  }
+
+  .accordion-header {
+    padding: 15px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .accordion-header:hover {
+    background-color: #fff2c2;
+  }
+
+  .accordion-content {
+    padding: 0 20px 15px;
+    display: none;
+    color: #555;
+  }
+
+  .accordion-item.active .accordion-content {
+    display: block;
+  }
+
+  .accordion-item.active .accordion-header::after {
+    content: "▲";
+  }
+
+  .accordion-header::after {
+    content: "▼";
+    font-size: 14px;
+  }
+</style>	  
 
 	<!-- more products -->
 	<div class="more-products mt-100 mb-150">
