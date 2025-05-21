@@ -1080,10 +1080,18 @@ Filter Air Rumah Tangga Berkualitas | Master Filter Air | M300 SC, M300 Manual, 
 </script>
 
 <script>
-  document.querySelectorAll('.accordion-header').forEach(header => {
-    header.addEventListener('click', () => {
-      const item = header.parentElement;
-      item.classList.toggle('active');
+  document.addEventListener('DOMContentLoaded', function () {
+    const headers = document.querySelectorAll('.accordion-header');
+    headers.forEach(header => {
+      header.addEventListener('click', () => {
+        const item = header.parentElement;
+        item.classList.toggle('active');
+
+        // Tutup item lain
+        document.querySelectorAll('.accordion-item').forEach(i => {
+          if (i !== item) i.classList.remove('active');
+        });
+      });
     });
   });
 </script>
