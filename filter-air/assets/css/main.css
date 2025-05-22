@@ -2849,3 +2849,47 @@ table.order-details tbody td {
   background-color: #ffc107;
   color: #000;
 }
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+/* Optional: styling supaya input dan button enak dilihat */
+.search-bar-tablecell form {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.search-bar-tablecell input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.search-bar-tablecell button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.search-bar-tablecell button:hover {
+  background-color: #0056b3;
+}
