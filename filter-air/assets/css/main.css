@@ -1230,9 +1230,6 @@ div.owl-controls div.owl-nav div:hover {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
-  max-width: 100%;
-  height: auto;
-  display: block;
 }
 
 .product-image img:hover {
@@ -2724,10 +2721,6 @@ table.order-details tbody td {
   box-shadow: 0 0 20px #e4e4e4;
   padding-bottom: 50px;
   border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 30px;
 }
 
 /* -----------------------------------------------------------------------------
