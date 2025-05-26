@@ -119,3 +119,17 @@
   content: "\f167";
   font-family: "Font Awesome 5 Brands";
 }
+.social-icons .fa-twitter::before {
+  content: "\f099";
+  font-family: "Font Awesome 5 Brands";
+}
+
+.social-icons .fa-facebook-f::before {
+  content: "\f39e";
+  font-family: "Font Awesome 5 Brands";
+}
+
+.social-icons .fa-linkedin::before {
+  content: "\f0e1";
+  font-family: "Font Awesome 5 Brands";
+}
