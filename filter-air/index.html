@@ -1088,19 +1088,37 @@ Filter Air Master | Solusi Filter Air Rumah Tangga dan Industri
 	<!-- end find our location -->
 
 <!-- google map section -->
-<div class="embed-responsive embed-responsive-21by9">
-  <iframe
-    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7928.9678613282995!2d106.817697!3d-6.460206000000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e9087405a1b1%3A0x2f7f90ee38ffc1b1!2sFilter%20Air%20Industri%20(PT.%20MASTER%20SINERGI%20BERSAUDARA)!5e0!3m2!1sen!2sid!4v1746291998526!5m2!1sen!2sid"
-    width="600"
-    height="450"
-    frameborder="0"
-    style="border:0;"
-    allowfullscreen=""
-    loading="lazy"
-    class="embed-responsive-item"
-    title="Peta lokasi PT. Master Sinergi Bersaudara di Google Maps"
-  ></iframe>
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+  integrity="sha256-sA+4xDkP9Wj1VpTxEEXxb0aaGU0mZoxgxUNw4YqNElM="
+  crossorigin=""
+/>
+
+<div class="embed-responsive embed-responsive-21by9" style="position: relative; width: 100%; padding-bottom: 42.8571%; height: 0; overflow: hidden;">
+  <div id="map" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></div>
 </div>
+
+<script
+  src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+  integrity="sha256-nNP39mQ4hE8k8zLQ3rxljl6NHF7NpDkOuhU+F6Y4pDY="
+  crossorigin=""
+></script>
+
+<script>
+  var map = L.map('map').setView([-6.460206, 106.817697], 15);
+
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution:
+      '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+  }).addTo(map);
+
+  L.marker([-6.460206, 106.817697])
+    .addTo(map)
+    .bindPopup('PT. Master Sinergi Bersaudara')
+    .openPopup();
+</script>
 <!-- end google map section -->
 
 
