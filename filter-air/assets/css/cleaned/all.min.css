@@ -80,3 +80,11 @@
 .fa-whatsapp:before {
   content: "\f232";
 }
+
+@media (max-width: 768px) {
+  .last-icon,
+  .search-bar-icon,
+  .video-play-btn.popup-youtube {
+    display: none !important;
+  }
+}
