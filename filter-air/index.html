@@ -1094,24 +1094,15 @@ Filter Air Master | Solusi Filter Air Rumah Tangga dan Industri
     font-family:'Poppins', sans-serif; font-size:16px; color:#555;">Memuat peta lokasi...</div>
 </div>
 
-<!-- Leaflet CSS -->
+<!-- Leaflet CSS (letakkan di <head> kalau bisa) -->
 <link
   rel="stylesheet"
   href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-  integrity="sha256-sA+Rw5HZfTfYf30zQEtp7kQ9QXQs8SoxS1Lt7vD0WvY="
-  crossorigin="anonymous"
 />
 
-<!-- Leaflet JS -->
-<script
-  src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-  integrity="sha256-o9N1j8fJozr5jVBOyQ6g9J5t4P5hKzP+3Hmt5C3yzDY="
-  crossorigin="anonymous"
-  defer
-></script>
-
+<!-- Leaflet JS (gunakan onload, bukan defer) -->
 <script>
-  window.addEventListener('load', () => {
+  function initializeLeafletMap() {
     let mapCreated = false;
 
     function createMap() {
@@ -1123,8 +1114,8 @@ Filter Air Master | Solusi Filter Air Rumah Tangga dan Industri
         minZoom: 14,
         maxZoom: 17,
         maxBounds: [
-          [-6.470, 106.80], // kiri bawah
-          [-6.450, 106.83]  // kanan atas
+          [-6.470, 106.80],
+          [-6.450, 106.83]
         ],
         attributionControl: true
       });
@@ -1144,10 +1135,7 @@ Filter Air Master | Solusi Filter Air Rumah Tangga dan Industri
 
     function isInViewport(el) {
       const rect = el.getBoundingClientRect();
-      return (
-        rect.top < window.innerHeight &&
-        rect.bottom >= 0
-      );
+      return rect.top < window.innerHeight && rect.bottom >= 0;
     }
 
     function tryLoadMap() {
@@ -1159,8 +1147,13 @@ Filter Air Master | Solusi Filter Air Rumah Tangga dan Industri
 
     document.addEventListener('scroll', tryLoadMap);
     tryLoadMap();
-  });
+  }
 </script>
+
+<script
+  src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  onload="initializeLeafletMap()"
+></script>
 <!-- === END PETA LOKASI === -->
 
 
