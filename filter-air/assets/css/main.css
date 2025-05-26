@@ -1545,6 +1545,22 @@ div.owl-controls, .owl-controls div {
   margin-top: -30px;
 }
 
+/* Nonaktifkan animasi hanya untuk slide pertama agar LCP lebih cepat */
+.homepage-slider .single-homepage-slider:first-child h1 {
+  animation: none !important;
+  opacity: 1 !important;
+  transform: none !important;
+  transition: none !important;
+}
+
+.homepage-slider .single-homepage-slider:first-child .subtitle {
+  animation: none !important;
+  opacity: 1 !important;
+  transform: none !important;
+  transition: none !important;
+}
+
+
 /* -----------------------------------------------------------------------------
 
 # List Styles
