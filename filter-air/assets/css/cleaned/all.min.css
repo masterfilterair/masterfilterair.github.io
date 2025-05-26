@@ -55,3 +55,28 @@
   text-rendering: auto;
   line-height: 1;
 }
+
+.fas.fa-shipping-fast:before {
+  content: "\f48b";
+}
+.fas.fa-phone-volume:before {
+  content: "\f2a0";
+}
+.fas.fa-id-card:before {
+  content: "\f2c2";
+}
+.fa.fa-calendar-check:before {
+  content: "\f274";
+}
+.fa.fa-award:before {
+  content: "\f559";
+}
+.fa.fa-thumbs-up:before {
+  content: "\f164";
+}
+.fa-shopping-cart:before {
+  content: "\f07a";
+}
+.fa-whatsapp:before {
+  content: "\f232";
+}
