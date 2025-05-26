@@ -80,11 +80,42 @@
 .fa-whatsapp:before {
   content: "\f232";
 }
+/* Custom Icon Selectors */
+.last-icon::before {
+  content: "\f07a"; /* fa-shopping-cart */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
 
-@media (max-width: 768px) {
-  .last-icon,
-  .search-bar-icon,
-  .video-play-btn.popup-youtube {
-    display: none !important;
-  }
+.search-bar-icon::before {
+  content: "\f002"; /* fa-search */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.video-play-btn.popup-youtube::before {
+  content: "\f04b"; /* fa-play */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+/* Social Icons */
+.social-icons .fa-facebook::before {
+  content: "\f09a";
+  font-family: "Font Awesome 5 Brands";
+}
+
+.social-icons .fa-instagram::before {
+  content: "\f16d";
+  font-family: "Font Awesome 5 Brands";
+}
+
+.social-icons .fa-whatsapp::before {
+  content: "\f232";
+  font-family: "Font Awesome 5 Brands";
+}
+
+.social-icons .fa-youtube::before {
+  content: "\f167";
+  font-family: "Font Awesome 5 Brands";
 }
