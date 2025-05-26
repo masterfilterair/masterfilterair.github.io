@@ -1,51 +1,3 @@
-/* Font Awesome Base Styles */
-.fa,
-.fab,
-.fas {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  line-height: 1;
-}
-
-/* Font Awesome Spin Animation */
-@keyframes fa-spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(1turn);
-  }
-}
-
-/* Icon Unicode Mapping */
-.fa-angle-right:before      { content: "\f105"; }
-.fa-award:before            { content: "\f559"; }
-.fa-calendar:before         { content: "\f133"; }
-.fa-calendar-check:before   { content: "\f274"; }
-.fa-facebook-f:before       { content: "\f39e"; }
-.fa-id-card:before          { content: "\f2c2"; }
-.fa-instagram:before        { content: "\f16d"; }
-.fa-linkedin:before         { content: "\f08c"; }
-.fa-map-marker-alt:before   { content: "\f3c5"; }
-.fa-phone-volume:before     { content: "\f2a0"; }
-.fa-play:before             { content: "\f04b"; }
-.fa-quote-right:before      { content: "\f10e"; }
-.fa-search:before           { content: "\f002"; }
-.fa-shipping-fast:before    { content: "\f48b"; }
-.fa-shopping-cart:before    { content: "\f07a"; }
-.fa-thumbs-up:before        { content: "\f164"; }
-.fa-twitter:before          { content: "\f099"; }
-.fa-user:before             { content: "\f007"; }
-.fa-whatsapp:before         { content: "\f232"; }
-.fa-window-close:before     { content: "\f410"; }
-.fa-youtube:before          { content: "\f167"; }
-
-/* Font Face Definitions */
-
 /* Font Awesome 5 Brands */
 @font-face {
   font-family: "Font Awesome 5 Brands";
@@ -63,7 +15,7 @@
   font-family: "Font Awesome 5 Brands";
 }
 
-/* Font Awesome 5 Free - Regular Weight */
+/* Font Awesome 5 Free - Regular */
 @font-face {
   font-family: "Font Awesome 5 Free";
   font-style: normal;
@@ -76,7 +28,7 @@
        url("../webfonts/fa-regular-400.svg#fontawesome") format("svg");
 }
 
-/* Font Awesome 5 Free - Solid Weight */
+/* Font Awesome 5 Free - Solid */
 @font-face {
   font-family: "Font Awesome 5 Free";
   font-style: normal;
@@ -89,8 +41,17 @@
        url("../webfonts/fa-solid-900.svg#fontawesome") format("svg");
 }
 
-.fa,
-.fas {
+.fa, .fas {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
+}
+
+.fa, .fab, .fas {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
 }
