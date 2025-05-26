@@ -1087,32 +1087,81 @@ Filter Air Master | Solusi Filter Air Rumah Tangga dan Industri
 	</div>
 	<!-- end find our location -->
 
-<!-- Google Map Section -->
-<link
-  rel="stylesheet"
-  href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
-/>
-
-<div class="embed-responsive embed-responsive-21by9" style="position: relative; width: 100%; padding-bottom: 42.8571%; height: 0; overflow: hidden;">
-  <div id="map" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></div>
+<!-- === PETA LOKASI (Lazy-load Leaflet Map) === -->
+<div id="map-section" style="height: 450px; width: 100%; position: relative; margin-bottom: 40px;">
+  <div id="map" style="height: 100%; width: 100%;"></div>
+  <div id="map-loading" style="position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);
+    font-family:'Poppins', sans-serif; font-size:16px; color:#555;">Memuat peta lokasi...</div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+<!-- Leaflet CSS -->
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-sA+Rw5HZfTfYf30zQEtp7kQ9QXQs8SoxS1Lt7vD0WvY="
+  crossorigin="anonymous"
+/>
+
+<!-- Leaflet JS -->
+<script
+  src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-o9N1j8fJozr5jVBOyQ6g9J5t4P5hKzP+3Hmt5C3yzDY="
+  crossorigin="anonymous"
+  defer
+></script>
 
 <script>
-  var map = L.map('map').setView([-6.460206, 106.817697], 15);
+  window.addEventListener('load', () => {
+    let mapCreated = false;
 
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution:
-      '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-  }).addTo(map);
+    function createMap() {
+      document.getElementById('map-loading').style.display = 'none';
 
-  L.marker([-6.460206, 106.817697])
-    .addTo(map)
-    .bindPopup('PT. Master Sinergi Bersaudara')
-    .openPopup();
+      const map = L.map('map', {
+        center: [-6.460206, 106.817697],
+        zoom: 15,
+        minZoom: 14,
+        maxZoom: 17,
+        maxBounds: [
+          [-6.470, 106.80], // kiri bawah
+          [-6.450, 106.83]  // kanan atas
+        ],
+        attributionControl: true
+      });
+
+      L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+        attribution:
+          '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors | &copy; <a href="https://carto.com/">CartoDB</a>',
+        subdomains: 'abcd',
+        maxZoom: 19
+      }).addTo(map);
+
+      L.marker([-6.460206, 106.817697])
+        .addTo(map)
+        .bindPopup("<strong>PT. Master Sinergi Bersaudara</strong><br>Filter Air Industri")
+        .openPopup();
+    }
+
+    function isInViewport(el) {
+      const rect = el.getBoundingClientRect();
+      return (
+        rect.top < window.innerHeight &&
+        rect.bottom >= 0
+      );
+    }
+
+    function tryLoadMap() {
+      if (!mapCreated && isInViewport(document.getElementById('map-section'))) {
+        createMap();
+        mapCreated = true;
+      }
+    }
+
+    document.addEventListener('scroll', tryLoadMap);
+    tryLoadMap();
+  });
 </script>
+<!-- === END PETA LOKASI === -->
 
 
 
