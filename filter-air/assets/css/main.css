@@ -2906,45 +2906,31 @@ table.order-details tbody td {
   background-color: #0056b3;
 }
 
-/* Tambahan untuk perbaikan tampilan mobile */
-
 @media (max-width: 767px) {
-  .site-logo {
-    float: none;
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  nav.main-menu ul {
-    display: block;
-    text-align: center;
-    padding: 0;
-  }
-
-  nav.main-menu ul li {
-    display: block;
-    margin: 10px 0;
-  }
-
   .top-header-area {
-    padding: 15px 0;
-  }
-
-  .site-logo img {
-    max-width: 120px;
-    height: auto;
-  }
-
-  .top-header-area {
+    padding: 10px 0;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
   }
 
-  .site-logo,
-  nav.main-menu {
-    width: 100%;
-    text-align: center;
+  .site-logo {
+    float: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .site-logo img {
+    max-width: 130px;
+    height: auto;
+  }
+
+  .mean-container .mean-bar {
+    top: 10px !important;
+    right: 15px !important;
+  }
+
+  .main-menu-wrap {
+    padding: 0 15px;
   }
 }
