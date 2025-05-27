@@ -2461,6 +2461,9 @@ a.cart-btn i {
 }
 
 .single-product-img img {
+  max-width: 100%;
+  height: auto;
+  display: block;
   border-radius: 5px;
   -webkit-box-shadow: 0 0 20px #ddd;
   box-shadow: 0 0 20px #ddd;
