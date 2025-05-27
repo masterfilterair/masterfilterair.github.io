@@ -799,20 +799,6 @@ Filter Air Master | Solusi Filter Air Rumah Tangga dan Industri
   </div>
 </section>
 
-<!-- latest news -->
-<section class="latest-news pt-5 pb-5">
-  <div class="container">
-    
-    <div class="row">
-      <div class="col-lg-8 offset-lg-2 text-center">
-        <header class="section-title">  
-          <h3><span class="orange-text">Berita</span> Terbaru</h3>
-          <p>Informasi terkini seputar filter air rumah tangga, industri, dan teknologi air bersih terbaik di Indonesia.</p>
-        </header>
-      </div>
-    </div>
-
-    <div class="row">
       <!-- News Item 1 -->
       <div class="col-lg-4 col-md-6 col-12">
         <article class="single-latest-news" itemscope itemtype="https://schema.org/NewsArticle">
@@ -1071,6 +1057,74 @@ Filter Air Master | Solusi Filter Air Rumah Tangga dan Industri
   </div>
   <!-- end find our location -->
 
+<!-- === PETA LOKASI (Lazy-load Leaflet Map) === -->
+<div id="map-section" style="height: 450px; width: 100%; position: relative; margin-bottom: 40px;">
+  <div id="map" style="height: 100%; width: 100%;"></div>
+  <div id="map-loading" style="position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);
+    font-family:'Poppins', sans-serif; font-size:16px; color:#555;">Memuat peta lokasi...</div>
+</div>
+
+<!-- Leaflet CSS (letakkan di <head> kalau bisa) -->
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+/>
+
+<!-- Leaflet JS (gunakan onload, bukan defer) -->
+<script>
+  function initializeLeafletMap() {
+    let mapCreated = false;
+
+    function createMap() {
+      document.getElementById('map-loading').style.display = 'none';
+
+      const map = L.map('map', {
+        center: [-6.460206, 106.817697],
+        zoom: 15,
+        minZoom: 14,
+        maxZoom: 17,
+        maxBounds: [
+          [-6.470, 106.80],
+          [-6.450, 106.83]
+        ],
+        attributionControl: true
+      });
+
+      L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+        attribution:
+          '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors | &copy; <a href="https://carto.com/">CartoDB</a>',
+        subdomains: 'abcd',
+        maxZoom: 19
+      }).addTo(map);
+
+      L.marker([-6.460206, 106.817697])
+        .addTo(map)
+        .bindPopup("<strong>PT. Master Sinergi Bersaudara</strong><br>Filter Air Industri")
+        .openPopup();
+    }
+
+    function isInViewport(el) {
+      const rect = el.getBoundingClientRect();
+      return rect.top < window.innerHeight && rect.bottom >= 0;
+    }
+
+    function tryLoadMap() {
+      if (!mapCreated && isInViewport(document.getElementById('map-section'))) {
+        createMap();
+        mapCreated = true;
+      }
+    }
+
+    document.addEventListener('scroll', tryLoadMap);
+    tryLoadMap();
+  }
+</script>
+
+<script
+  src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  onload="initializeLeafletMap()"
+></script>
+<!-- === END PETA LOKASI === -->
 
 
   <!-- footer -->
