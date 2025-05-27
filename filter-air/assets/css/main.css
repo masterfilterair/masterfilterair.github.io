@@ -846,6 +846,7 @@ a.mobile-show {
   letter-spacing: 7px;
 }
 
+
 /* -----------------------------------------------------------------------------
 
 # Footer Styles
@@ -1545,6 +1546,14 @@ div.owl-controls, .owl-controls div {
   margin-top: -30px;
 }
 
+.homepage-slider .single-homepage-slider:first-child h1 {
+  animation: none !important;
+  animation-delay: 0s !important;
+  animation-duration: 0s !important;
+  opacity: 1 !important;
+  transform: none !important;
+  transition: none !important;
+}
 
 
 
@@ -2895,4 +2904,47 @@ table.order-details tbody td {
 
 .search-bar-tablecell button:hover {
   background-color: #0056b3;
+}
+
+/* Tambahan untuk perbaikan tampilan mobile */
+
+@media (max-width: 767px) {
+  .site-logo {
+    float: none;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  nav.main-menu ul {
+    display: block;
+    text-align: center;
+    padding: 0;
+  }
+
+  nav.main-menu ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .top-header-area {
+    padding: 15px 0;
+  }
+
+  .site-logo img {
+    max-width: 120px;
+    height: auto;
+  }
+
+  .top-header-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .site-logo,
+  nav.main-menu {
+    width: 100%;
+    text-align: center;
+  }
 }
