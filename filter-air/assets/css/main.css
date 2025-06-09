@@ -1245,7 +1245,7 @@ a.cart-btn {
 }
 
 a.cart-btn:hover {
-  background-color: #051922;
+  background-color: #333c44;
   color: #F28123;
 }
 
@@ -2452,8 +2452,9 @@ a.cart-btn {
   font-family: 'Poppins', sans-serif;
   display: inline-block;
   background-color: #F28123;
-  color: #fff;
+  color: #051922;
   padding: 10px 20px;
+  font-weight: bold;
 }
 
 a.cart-btn i {
