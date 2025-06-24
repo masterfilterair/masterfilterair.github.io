@@ -257,7 +257,7 @@
 	</div>
 	<!-- end header -->
 
-<!-- Search Area -->
+<!-- search area -->
 <div class="search-area">
   <div class="container">
     <div class="row">
@@ -265,16 +265,22 @@
         <span class="close-btn"><i class="fas fa-window-close"></i></span>
         <div class="search-bar">
           <div class="search-bar-tablecell">
-            <h3>Search For:</h3>
-            <input type="text" placeholder="Keywords">
-            <button type="submit">Search <i class="fas fa-search"></i></button>
+            <p>Cari Filter Air:</p>
+            <form method="get" action="https://www.google.com/search" target="_blank" role="search" aria-label="Cari di situs ini">
+              <label for="search-input" class="visually-hidden">Masukkan kata kunci</label>
+              <input type="text" id="search-input" name="q" placeholder="Cari di situs ini" required>
+              <input type="hidden" name="sitesearch" value="https://filterairmaster.co.id/filter-air/">
+              <button type="submit" aria-label="Cari">
+                Search <i class="fas fa-search"></i>
+              </button>
+            </form>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-<!-- End Search Area -->
+<!-- end search area -->
 
  <!-- Breadcrumb -->
   <div class="breadcrumb-section breadcrumb-bg">
