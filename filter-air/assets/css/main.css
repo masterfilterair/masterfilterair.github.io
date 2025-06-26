@@ -476,6 +476,9 @@ a.boxed-btn, a.bordered-btn, a.cart-btn {
 
 .breadcrumb-bg {
   background-image: url(../img/breadcrumb-bg.webp);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .breadcrumb-text p {
@@ -494,13 +497,9 @@ a.boxed-btn, a.bordered-btn, a.cart-btn {
 }
 
 .breadcrumb-section {
-  padding: 150px 0;
-  background-size: cover;
-  background-position: center center;
+  padding: 150px 0 100px;
   position: relative;
   z-index: 1;
-  background-attachment: fixed;
-  padding-top: 200px;
 }
 
 .breadcrumb-section:after {
