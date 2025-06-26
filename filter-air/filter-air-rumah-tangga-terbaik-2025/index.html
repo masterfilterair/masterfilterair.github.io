@@ -106,32 +106,64 @@
 }
 </script>
 
-  <!-- Google Fonts --> 
+<!-- Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 <noscript>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </noscript>
 
+<!-- Inline CSS Kritis -->
+<style>
+  body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #333;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+</style>
+
 <!-- Preload Font Awesome Webfonts -->
 <link rel="preload" href="/filter-air/assets/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 <link rel="preload" href="/filter-air/assets/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+<!-- Preload Hero Image -->
 <link rel="preload" as="image" href="/filter-air/assets/img/breadcrumb-bg.webp" type="image/webp">
 
-<!-- Stylesheets -->
-<link rel="stylesheet" href="/filter-air/assets/css/cleaned/all.min.css">
+<!-- Lazy-load Stylesheets -->
+<link rel="stylesheet" href="/filter-air/assets/css/cleaned/all.min.css" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="/filter-air/assets/css/cleaned/all.min.css"></noscript>
 
-<!-- Lazy-load Bootstrap -->
 <link rel="stylesheet" href="/filter-air/assets/css/cleaned/bootstrap.min.css" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="/filter-air/assets/css/cleaned/bootstrap.min.css"></noscript>
 
-  <link rel="stylesheet" href="/filter-air/assets/css/owl.carousel.css">
-  <link rel="stylesheet" href="/filter-air/assets/css/magnific-popup.css">
-  <link rel="stylesheet" href="/filter-air/assets/css/animate.css">
-  <link rel="stylesheet" href="/filter-air/assets/css/meanmenu.min.css">
-  <link rel="stylesheet" href="/filter-air/assets/css/main.css">
-  <link rel="stylesheet" href="/filter-air/assets/css/responsive.css">
+<link rel="stylesheet" href="/filter-air/assets/css/owl.carousel.css" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="/filter-air/assets/css/owl.carousel.css"></noscript>
+
+<link rel="stylesheet" href="/filter-air/assets/css/magnific-popup.css" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="/filter-air/assets/css/magnific-popup.css"></noscript>
+
+<link rel="stylesheet" href="/filter-air/assets/css/animate.css" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="/filter-air/assets/css/animate.css"></noscript>
+
+<link rel="stylesheet" href="/filter-air/assets/css/meanmenu.min.css" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="/filter-air/assets/css/meanmenu.min.css"></noscript>
+
+<link rel="stylesheet" href="/filter-air/assets/css/main.css" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="/filter-air/assets/css/main.css"></noscript>
+
+<link rel="stylesheet" href="/filter-air/assets/css/responsive.css" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="/filter-air/assets/css/responsive.css"></noscript>
 </head>
 
 <body>
