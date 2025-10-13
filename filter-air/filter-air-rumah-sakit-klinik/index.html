@@ -131,92 +131,147 @@
 }
 </script>
 
-<!-- Structured Data: HowTo + Project Schema -->
+<!-- Structured Data: HowTo - Pemasangan Filter Air Rumah Sakit --> 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@graph": [
+  "@type": "HowTo",
+  "name": "Cara Pemasangan Filter Air Rumah Sakit di RS Jantung Binawaluya Jakarta",
+  "description": "Panduan langkah demi langkah instalasi sistem Filter Air Master M300 Automatic di RS Jantung Binawaluya Jakarta sesuai standar Permenkes No. 2 Tahun 2023.",
+  "image": "https://filterairmaster.co.id/filter-air/assets/img/latest-news/pemasangan-rumah-sakit-jantung-binawaluya.webp",
+  "totalTime": "PT6H",
+  "estimatedCost": {
+    "@type": "MonetaryAmount",
+    "currency": "IDR",
+    "value": "24500000"
+  },
+  "supply": [
     {
-      "@type": "HowTo",
-      "name": "Cara Pemasangan Filter Air Rumah Sakit di RS Jantung Binawaluya Jakarta",
-      "description": "Panduan langkah demi langkah instalasi sistem Filter Air Master M300 Automatic di RS Jantung Binawaluya Jakarta sesuai standar Permenkes No. 2 Tahun 2023.",
-      "totalTime": "PT6H",
-      "estimatedCost": {
-        "@type": "MonetaryAmount",
-        "currency": "IDR",
-        "value": "24500000"
-      },
-      "supply": [
-        { "@type": "HowToSupply", "name": "Filter Air Master M300 Automatic" },
-        { "@type": "HowToSupply", "name": "Pipa PVC, Valve Otomatis, dan Aksesori Instalasi" },
-        { "@type": "HowToSupply", "name": "Media Filtrasi: Chamotte Small (0.3–0.6mm), Chamotte Middle (0.6–1.18mm), Silika Sand 1–3mm, dan Karbon Aktif Powder" }
-      ],
-      "tool": [
-        { "@type": "HowToTool", "name": "Kunci Pipa & Tang Tekan" },
-        { "@type": "HowToTool", "name": "Pompa Tekan dan Pressure Gauge" }
-      ],
-      "step": [
-        {
-          "@type": "HowToStep",
-          "position": 1,
-          "name": "Survey Lokasi dan Uji Kualitas Air",
-          "text": "Tim teknisi melakukan analisis kualitas air untuk menentukan konfigurasi media filtrasi dan tekanan pompa sesuai kebutuhan rumah sakit."
-        },
-        {
-          "@type": "HowToStep",
-          "position": 2,
-          "name": "Instalasi Unit Filter M300 Automatic",
-          "text": "Pemasangan tiga unit Filter Air Master M300 Automatic di gedung utama RS Jantung Binawaluya dengan sistem distribusi air bersih terintegrasi."
-        },
-        {
-          "@type": "HowToStep",
-          "position": 3,
-          "name": "Koneksi Sistem Auto Backwash",
-          "text": "Valve otomatis diatur agar proses backwash berjalan otomatis sesuai jadwal, menjaga kebersihan media filtrasi dan efisiensi kerja sistem."
-        },
-        {
-          "@type": "HowToStep",
-          "position": 4,
-          "name": "Uji Tekanan dan Kualitas Air",
-          "text": "Dilakukan pengujian tekanan, volume aliran, serta kejernihan air hingga memenuhi standar Permenkes No. 2 Tahun 2023."
-        }
-      ],
-      "performer": {
-        "@type": "Organization",
-        "name": "Master Filter Air",
-        "url": "https://filterairmaster.co.id/",
-        "logo": "https://filterairmaster.co.id/filter-air/assets/img/logo_master_water_solution.webp"
-      },
-      "image": "https://filterairmaster.co.id/filter-air/assets/img/latest-news/pemasangan-rumah-sakit-jantung-binawaluya.webp"
+      "@type": "HowToSupply",
+      "name": "Filter Air Master M300 Automatic"
     },
     {
-      "@type": "Project",
-      "name": "Proyek Pemasangan Filter Air Rumah Sakit RS Jantung Binawaluya Jakarta",
-      "description": "Pemasangan tiga unit Filter Air Master M300 Automatic di RS Jantung Binawaluya Jakarta untuk menjamin ketersediaan air bersih seluruh fasilitas medis.",
-      "url": "https://filterairmaster.co.id/filter-air/filter-air-rumah-sakit-klinik/",
-      "image": "https://filterairmaster.co.id/filter-air/assets/img/latest-news/pemasangan-rumah-sakit-jantung-binawaluya.webp",
-      "startDate": "2024-06-10",
-      "completionDate": "2024-06-12",
-      "location": {
-        "@type": "Place",
-        "name": "RS Jantung Binawaluya",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Jl. TB Simatupang No.71, RT.11/RW.5, Susukan, Kec. Ciracas",
-          "addressLocality": "Jakarta Timur",
-          "addressRegion": "DKI Jakarta",
-          "postalCode": "13750",
-          "addressCountry": "ID"
-        }
-      },
-      "performer": {
-        "@type": "Organization",
-        "name": "Master Filter Air",
-        "url": "https://filterairmaster.co.id/",
-        "logo": "https://filterairmaster.co.id/filter-air/assets/img/logo_master_water_solution.webp"
+      "@type": "HowToSupply",
+      "name": "Pipa PVC, Valve Otomatis, dan Aksesori Instalasi"
+    },
+    {
+      "@type": "HowToSupply",
+      "name": "Media Filtrasi: Chamotte Small (0.3–0.6mm), Chamotte Middle (0.6–1.18mm), Silika Sand 1–3mm, dan Karbon Aktif Powder"
+    }
+  ],
+  "tool": [
+    {
+      "@type": "HowToTool",
+      "name": "Kunci Pipa & Tang Tekan"
+    },
+    {
+      "@type": "HowToTool",
+      "name": "Pompa Tekan dan Pressure Gauge"
+    }
+  ],
+  "step": [
+    {
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "Survey Lokasi dan Uji Kualitas Air",
+      "text": "Tim teknisi melakukan analisis kualitas air untuk menentukan konfigurasi media filtrasi dan tekanan pompa sesuai kebutuhan rumah sakit."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "Instalasi Unit Filter M300 Automatic",
+      "text": "Pemasangan tiga unit Filter Air Master M300 Automatic di gedung utama RS Jantung Binawaluya dengan sistem distribusi air bersih terintegrasi."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 3,
+      "name": "Koneksi Sistem Auto Backwash",
+      "text": "Valve otomatis diatur agar proses backwash berjalan otomatis sesuai jadwal, menjaga kebersihan media filtrasi dan efisiensi kerja sistem."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 4,
+      "name": "Uji Tekanan dan Kualitas Air",
+      "text": "Dilakukan pengujian tekanan, volume aliran, serta kejernihan air hingga memenuhi standar Permenkes No. 2 Tahun 2023."
+    }
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Master Filter Air",
+    "url": "https://filterairmaster.co.id/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://filterairmaster.co.id/filter-air/assets/img/logo_master_water_solution.webp",
+      "width": 600,
+      "height": 60
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://filterairmaster.co.id/filter-air/filter-air-rumah-sakit-klinik/"
+  }
+}
+</script>
+
+
+<!-- Structured Data: Project - Pemasangan Filter Air Rumah Sakit -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Project",
+  "name": "Proyek Pemasangan Filter Air Rumah Sakit RS Jantung Binawaluya Jakarta",
+  "description": "Pemasangan tiga unit Filter Air Master M300 Automatic di RS Jantung Binawaluya Jakarta untuk menjamin ketersediaan air bersih seluruh fasilitas medis.",
+  "url": "https://filterairmaster.co.id/filter-air/filter-air-rumah-sakit-klinik/",
+  "image": "https://filterairmaster.co.id/filter-air/assets/img/latest-news/pemasangan-rumah-sakit-jantung-binawaluya.webp",
+  "identifier": "MF-RSJB-2024",
+  "keywords": ["filter air rumah sakit", "IPAL rumah sakit", "Master Filter Air", "Binawaluya Jakarta"],
+  "about": {
+    "@type": "Thing",
+    "name": "Instalasi sistem penyaringan air rumah sakit",
+    "sameAs": "https://filterairmaster.co.id/filter-air/filter-air-rumah-sakit-klinik/"
+  },
+  "location": {
+    "@type": "Place",
+    "name": "RS Jantung Binawaluya",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Jl. TB Simatupang No.71, RT.11/RW.5, Susukan, Kec. Ciracas",
+      "addressLocality": "Jakarta Timur",
+      "addressRegion": "DKI Jakarta",
+      "postalCode": "13750",
+      "addressCountry": {
+        "@type": "Country",
+        "name": "ID"
       }
     }
-  ]
+  },
+  "sponsor": {
+    "@type": "Organization",
+    "name": "RS Jantung Binawaluya",
+    "url": "https://www.binawaluya.com/"
+  },
+  "provider": {
+    "@type": "Organization",
+    "name": "Master Filter Air",
+    "url": "https://filterairmaster.co.id/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://filterairmaster.co.id/filter-air/assets/img/logo_master_water_solution.webp",
+      "width": 600,
+      "height": 60
+    }
+  },
+  "hasPart": {
+    "@type": "HowTo",
+    "name": "Instalasi Filter Air Master M300 Automatic",
+    "description": "Langkah-langkah instalasi sistem filtrasi air bersih di lingkungan rumah sakit menggunakan unit Master Filter Air M300 Automatic."
+  },
+  "dateCreated": "2024-06-10",
+  "dateModified": "2024-06-12",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://filterairmaster.co.id/filter-air/filter-air-rumah-sakit-klinik/"
+  }
 }
 </script>
 
